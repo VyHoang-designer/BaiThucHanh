@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        input:checked + label{
+            color: red;
+        }
+        input[type="checkbox"]:checked{
+            box-shadow: 0 0 0 3px hotpink;
+        }
+        p::first-letter {
+            color: white;
+            background-color: #333;
+            border-radius: 2px;
+            font-size: 200%;
+            box-shadow: 3px 3px 0 yellow;
+            padding: 6px 3px;
+            margin-right: 5px;
+        }
+        p::before{
+            content: "Đọc thêm:";
+            color: red;
+            font-weight: bold;
+        }
+        p::after{
+            content: "Kết thúc";
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</html>
+<body>
+    <div>
+        <input type="checkbox" name="my-checkbox" id="opt-in">
+        <label for="opt-in">Chọn</label>
+    </div>
+    <p>Ví dụ, chúng ta sẽ làm nổi chữ cái đầu tiên của một đoạn </p>
+</body>
